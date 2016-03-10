@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="10dp"
+android:paddingLeft="10dp"
+android:paddingRight="10dp"
+android:paddingTop="10dp"
+    android:background="@color/colorPrimaryDark"
+tools:context="com.example.prabh.preference_sql_storage.MainActivity">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView"
+    android:src="@drawable/sjsu"
+    android:maxHeight="5dp"
+    android:maxWidth="5dp"
+    android:longClickable="false" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Preferences"
+    android:id="@+id/pref"
+    android:layout_marginTop="28dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:onClick="openPreferences"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:layout_below="@+id/imageView"
+    android:layout_alignRight="@+id/imageView"
+    android:layout_alignEnd="@+id/imageView" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SQLite"
+    android:id="@+id/sql"
+    android:layout_marginRight="31dp"
+    android:layout_marginEnd="31dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:onClick="openSql"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:layout_alignTop="@+id/pref"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Finish"
+    android:id="@+id/close"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:onClick="close"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:layout_marginRight="33dp"
+    android:layout_marginEnd="33dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/button"
+    android:layout_toStartOf="@+id/button" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Android Data Storage "
+    android:id="@+id/textView"
+    android:textSize="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/outputData"
+    android:layout_toEndOf="@+id/outputData" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/outputData"
+    android:layout_centerVertical="true"
+    android:singleLine="false"
+    android:gravity="left"
+    android:layout_alignRight="@+id/close"
+    android:layout_alignEnd="@+id/close" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reset"
+    android:id="@+id/button"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:onClick="clearContents"
+    android:layout_alignTop="@+id/close"
+    android:layout_alignRight="@+id/sql"
+    android:layout_alignEnd="@+id/sql"
+    android:layout_marginRight="42dp"
+    android:layout_marginEnd="42dp" />
+
+
+</RelativeLayout>
